@@ -432,6 +432,9 @@ fn main() {
 }
 ```
 
+rust上手了一段时间感觉还是比较ok的，除了lifetime，lifetime那里有点迷，其它很多都可以从c++和go的视角代入来看，rust的宏简直就是我的神，我go使用的是我自己编写的“宏”来生成go代码的，go的运行时反射我也在用，但还是不仅人意，很多地方明明能在编译期间做的，它就只能在运行时用反射，所以我后来自己搞了个"宏"生成代码，但是新问题又来了，生成的代码必须实际写入go文件，又会造成代码冗杂，后面的其他同事接手代码又会懵逼。而rust的宏是比较合理的，用syn将tokenstream解析为ast语法树，然后用quote将需要生成的代码走模版返回而不是跟胶水一样东瓶西凑
+
+
 ## 文档
 - [rust](https://course.rs/basic/ownership/ownership.html)
 - [rust-by-practice](https://github.com/sunface/rust-by-practice)
@@ -443,3 +446,20 @@ fn main() {
 - [Rust By Practice( Rust 练习实践 )](https://practice-zh.course.rs/type-conversions/from-into.html)
 - [rust-by-example](https://rustwiki.org/zh-CN/rust-by-example/hello.html)
 - [too-many-lists](https://rust-unofficial.github.io/too-many-lists/)
+- [Rusty Book(锈书)](https://rusty.course.rs/devtools/log.html)
+- [rust-learning](https://github.com/gottaBoy/rust-learning)
+- [Rust 语言圣经](https://course.rs/about-book.html)
+- [Rust 语言圣经(中文版)](https://rustlang.cn/book/title-page.html)
+- [Rust 语言圣经(英文版)](https://doc.rust-lang.org/book/title-page.html)
+- [BestSRE](https://github.com/mingongge/BestSRE)
+- [BestSRE(中文版)](https://github.com/mingongge/BestSRE/blob/master/README.md)
+- [Nightingale](https://mp.weixin.qq.com/s/pvfaNKEPd74TuHUE8m5lpQ)
+- [CSS—flex布局、常用水平垂直居中](https://juejin.cn/post/6844904098777710599)
+- [too-many-lists](https://rust-unofficial.github.io/too-many-lists/third-layout.html)
+- [comprehensive-rust](https://google.github.io/comprehensive-rust/)
+- [comprehensive-rust(中文版)](https://google.github.io/comprehensive-rust/zh-CN/other-resources.html)
+- [rust-algos](https://github.com/rustcn-org/rust-algos)
+- [Rust 练习实践](https://practice-zh.course.rs/type-conversions)
+- [polonius](https://github.com/rust-lang/polonius)
+- [Rusty Book](https://rusty.course.rs/devtools/log.html)
+
